@@ -8,7 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		9EDADA451969B1D1007305E2 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EDADA441969B1D1007305E2 /* main.c */; };
-		9EDADA471969B1D1007305E2 /* opengl.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9EDADA461969B1D1007305E2 /* opengl.1 */; };
+		9EDADA54196CD673007305E2 /* frustum.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EDADA53196CD673007305E2 /* frustum.c */; };
+		9EDADA57196D7840007305E2 /* random.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EDADA56196D7840007305E2 /* random.c */; };
+		9EDADA5A196D78E9007305E2 /* node.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EDADA59196D78E9007305E2 /* node.c */; };
+		9EDADA5D196D7B32007305E2 /* array.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EDADA5C196D7B32007305E2 /* array.c */; };
+		9EDADA60196D7CBE007305E2 /* draw.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EDADA5F196D7CBE007305E2 /* draw.c */; };
+		9EDADA63196D7DB0007305E2 /* input.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EDADA62196D7DB0007305E2 /* input.c */; };
+		9EDADA66196D7F4A007305E2 /* vector3.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EDADA65196D7F4A007305E2 /* vector3.c */; };
+		9EF4F27A19706834005DBF5E /* texture.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EF4F27919706834005DBF5E /* texture.c */; };
+		9EF4F27D1970A366005DBF5E /* simplex.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EF4F27C1970A366005DBF5E /* simplex.c */; };
+		9EF4F2801971F017005DBF5E /* chunk.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EF4F27F1971F017005DBF5E /* chunk.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,16 +27,37 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				9EDADA471969B1D1007305E2 /* opengl.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9E2AF3F2196D9CF8005C6BB0 /* colors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = colors.h; sourceTree = "<group>"; };
+		9E2EEDCE19A2D3BE00814BCA /* vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vertex.h; sourceTree = "<group>"; };
+		9EA4160F1BDEA694001B4462 /* all.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = all.bmp; path = Textures/all.bmp; sourceTree = "<group>"; };
 		9EDADA411969B1D1007305E2 /* opengl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = opengl; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EDADA441969B1D1007305E2 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		9EDADA461969B1D1007305E2 /* opengl.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = opengl.1; sourceTree = "<group>"; };
+		9EDADA53196CD673007305E2 /* frustum.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = frustum.c; sourceTree = "<group>"; };
+		9EDADA55196CD7D7007305E2 /* frustum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = frustum.h; sourceTree = "<group>"; };
+		9EDADA56196D7840007305E2 /* random.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = random.c; sourceTree = "<group>"; };
+		9EDADA58196D7881007305E2 /* random.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = random.h; sourceTree = "<group>"; };
+		9EDADA59196D78E9007305E2 /* node.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = node.c; sourceTree = "<group>"; };
+		9EDADA5B196D792B007305E2 /* node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = node.h; sourceTree = "<group>"; };
+		9EDADA5C196D7B32007305E2 /* array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = array.c; sourceTree = "<group>"; };
+		9EDADA5E196D7B40007305E2 /* array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = array.h; sourceTree = "<group>"; };
+		9EDADA5F196D7CBE007305E2 /* draw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = draw.c; sourceTree = "<group>"; };
+		9EDADA61196D7CFF007305E2 /* draw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = draw.h; sourceTree = "<group>"; };
+		9EDADA62196D7DB0007305E2 /* input.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = input.c; sourceTree = "<group>"; };
+		9EDADA64196D7E4E007305E2 /* input.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = input.h; sourceTree = "<group>"; };
+		9EDADA65196D7F4A007305E2 /* vector3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vector3.c; sourceTree = "<group>"; };
+		9EDADA67196D7F70007305E2 /* vector3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vector3.h; sourceTree = "<group>"; };
+		9EF4F27919706834005DBF5E /* texture.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = texture.c; sourceTree = "<group>"; };
+		9EF4F27B19706BEE005DBF5E /* texture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = texture.h; sourceTree = "<group>"; };
+		9EF4F27C1970A366005DBF5E /* simplex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = simplex.c; sourceTree = "<group>"; };
+		9EF4F27E1970A385005DBF5E /* simplex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = simplex.h; sourceTree = "<group>"; };
+		9EF4F27F1971F017005DBF5E /* chunk.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = chunk.c; sourceTree = "<group>"; };
+		9EF4F2811971F03E005DBF5E /* chunk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chunk.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +91,29 @@
 			isa = PBXGroup;
 			children = (
 				9EDADA441969B1D1007305E2 /* main.c */,
-				9EDADA461969B1D1007305E2 /* opengl.1 */,
+				9E2AF3F2196D9CF8005C6BB0 /* colors.h */,
+				9EDADA65196D7F4A007305E2 /* vector3.c */,
+				9EDADA67196D7F70007305E2 /* vector3.h */,
+				9E2EEDCE19A2D3BE00814BCA /* vertex.h */,
+				9EDADA62196D7DB0007305E2 /* input.c */,
+				9EDADA64196D7E4E007305E2 /* input.h */,
+				9EF4F27919706834005DBF5E /* texture.c */,
+				9EF4F27B19706BEE005DBF5E /* texture.h */,
+				9EDADA5F196D7CBE007305E2 /* draw.c */,
+				9EDADA61196D7CFF007305E2 /* draw.h */,
+				9EF4F27C1970A366005DBF5E /* simplex.c */,
+				9EF4F27E1970A385005DBF5E /* simplex.h */,
+				9EDADA5C196D7B32007305E2 /* array.c */,
+				9EDADA5E196D7B40007305E2 /* array.h */,
+				9EDADA5B196D792B007305E2 /* node.h */,
+				9EDADA59196D78E9007305E2 /* node.c */,
+				9EF4F2811971F03E005DBF5E /* chunk.h */,
+				9EF4F27F1971F017005DBF5E /* chunk.c */,
+				9EDADA53196CD673007305E2 /* frustum.c */,
+				9EDADA55196CD7D7007305E2 /* frustum.h */,
+				9EDADA56196D7840007305E2 /* random.c */,
+				9EDADA58196D7881007305E2 /* random.h */,
+				9EA4160F1BDEA694001B4462 /* all.bmp */,
 			);
 			path = opengl;
 			sourceTree = "<group>";
@@ -117,7 +169,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EF4F2801971F017005DBF5E /* chunk.c in Sources */,
+				9EDADA54196CD673007305E2 /* frustum.c in Sources */,
+				9EDADA63196D7DB0007305E2 /* input.c in Sources */,
+				9EDADA60196D7CBE007305E2 /* draw.c in Sources */,
+				9EDADA5A196D78E9007305E2 /* node.c in Sources */,
+				9EDADA57196D7840007305E2 /* random.c in Sources */,
 				9EDADA451969B1D1007305E2 /* main.c in Sources */,
+				9EDADA5D196D7B32007305E2 /* array.c in Sources */,
+				9EDADA66196D7F4A007305E2 /* vector3.c in Sources */,
+				9EF4F27D1970A366005DBF5E /* simplex.c in Sources */,
+				9EF4F27A19706834005DBF5E /* texture.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,14 +259,20 @@
 		9EDADA4B1969B1D1007305E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
 			};
 			name = Debug;
 		};
 		9EDADA4C1969B1D1007305E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
 			};
 			name = Release;
 		};
@@ -227,6 +295,7 @@
 				9EDADA4C1969B1D1007305E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
